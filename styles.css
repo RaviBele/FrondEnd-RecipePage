@@ -17,42 +17,47 @@ body {
 
 .main {
     background-color: white;
-    border-radius: 30px;
-    width: 70%;
+    border-radius: 1.5rem;
+    width: 750px;
     margin: 150px auto;
 }
 
-.recipe {
-    padding: 50px 50px 50px 50px;
+.recipe-img {
+    padding: 2.5rem 2.5rem 0rem 2.5rem;
 }
 
-.recipe img {
+.recipe-content {
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+}
+
+.recipe-img img {
     width: 100%;
     height: 100%;
     border-radius: 30px;
 }
 
-.recipe h1 {
+.recipe-content h1 {
     font-family: YoungSerif-Regular;
-    font-size: 65px;
+    font-size: 2.5rem;
+    margin: 0.5rem 0 0 0;
 }
 
-.recipe p {
+.recipe-content p {
     font-family: Outfit-VariableFont;
     color: hsl(60, 1%, 33%);
-    font-size: 28px;
+    line-height: 1.5rem;
 }
 
-.recipe .prep-time {
+.prep-time {
     background-color: hsl(330, 100%, 98%);
-    padding: 10px 10px 10px 30px;
+    padding: 0.2rem 0.2rem 0.2rem 2rem;
     font-family: Outfit-VariableFont;
+    font-size: 1rem;
     margin-top: 40px;
-    font-size: 22px;
     border-radius: 20px;
 }
 
-.recipe .prep-time  h2 {
+.prep-time  h2 {
     color: hsl(332, 51%, 32%);
 }
 
@@ -61,62 +66,71 @@ body {
 .bullets li {
     font-family: Outfit-VariableFont;
     padding-left:1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.7em;
     color: hsl(60, 1%, 33%);
 }
 
-.recipe .prep-time li::marker {
+.prep-time li::marker {
     color: hsl(332, 51%, 32%);
 }
 
 .subheading {
     font-family: YoungSerif-Regular;
     color: hsl(14, 45%, 36%);
-    font-size: 45px;
 }
 
-.recipe .ingredients li::marker {
+.ingredients li::marker {
     color: hsl(14, 45%, 36%);
 }
 
-.recipe .ingredients li {
-    font-size: 23px;
-}
-
-.recipe .instructions li {
-    font-size: 28px;
+.instructions li {
     font-weight:bold;
 }
 
-.recipe .instructions li span {
+.instructions li span {
     font-weight:normal;
 }
 
-.recipe .instructions li::marker {
+.instructions li::marker {
     color: hsl(332, 51%, 32%);
 }
 
-.recipe .nutritions table {
+.nutritions table {
     border-collapse: collapse;
     width: 100%;
 }
 
-.recipe .nutritions table tr:last-child {
+.nutritions table tr:last-child {
     border-bottom: 0;
 }
 
-.recipe .nutritions tr {
+.nutritions tr {
     border-bottom: 1px solid hsl(0, 0%, 55%);
 }
 
-.recipe .nutritions td {
+.nutritions td {
     padding: 10px 100px 10px 40px;
-    font-size: 28px;
     font-family: Outfit-VariableFont;
     color: hsl(60, 1%, 33%);
 }
 
-.recipe .nutritions td span {
+.nutritions td span {
     color: hsl(14, 45%, 36%);
     font-weight: bold;
+}
+
+@media (max-width: 750px)  {
+    .main {
+        width: 100%; 
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    .recipe-img {
+        padding: 0;
+    }
+
+    .recipe-img img {
+        border-radius: 0;
+    }
 }
