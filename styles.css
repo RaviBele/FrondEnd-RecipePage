@@ -109,7 +109,7 @@ body {
 }
 
 .nutritions td {
-    padding: 10px 100px 10px 40px;
+    padding:10px 0 10px 40px;
     font-family: Outfit-VariableFont;
     color: hsl(60, 1%, 33%);
 }
